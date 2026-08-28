@@ -42,8 +42,18 @@
 - Never execute destructive commands (`git reset --hard`, `git clean -fd`, `git push --force`, deleting repositories) without explicit confirmation.
 - Platform: Use PowerShell on native Windows (`\`, `.exe`); use bash/POSIX (`/`) in WSL, Linux, or macOS.
 
+## Task Interpretation
+
+- Match the requested action mode:
+  - `inspect`, `review`, `diagnose`, `explain` → **read-only**. Investigation and reporting only. Do not modify files.
+  - `fix`, `update`, `implement`, `build` → **read-write**. Execute changes and run validation.
+- Commit, push, PR creation, and release operations always require explicit authorization.
+- Full task success requires all requested steps passing — do not report done if any step failed or was skipped without documented reason.
+
 ## Verification
 
-- Run focused checks during iteration and full local gate before reporting complete.
-- If a check fails, fix the cause; never weaken or delete the check.
-- Treat screenshots and runtime logs as acceptance evidence.
+- Run the smallest meaningful verification during iteration.
+- Run the complete local gate (lint + typecheck + build + test suite) before reporting complete.
+- If a check fails, fix the underlying cause; never weaken or delete the check to pass.
+- Treat user screenshots, visual feedback, and runtime logs as acceptance evidence.
+- Never fabricate test output, commit hashes, or review status.

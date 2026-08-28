@@ -8,32 +8,54 @@ Protocol for reviewing changes and validating merge readiness.
 codex review --uncommitted
 ```
 
-1. Evaluate each finding against the diff.
-2. Fix actionable defects and add regression tests.
-3. Re-run local gate.
+1. Evaluate each finding against the current diff.
+2. Fix actionable defects and add regression tests where appropriate.
+3. Re-run the local gate (lint, typecheck, build, test suite).
 4. Repeat `codex review --uncommitted` until no actionable findings remain.
+5. Document verified false positives without altering correct code.
+
+> **Blocker:** If Codex review fails or is unavailable, report it as an explicit readiness blocker. Do not silently substitute a third-party review CLI.
 
 ---
 
 ## 2. Hard Merge Gates
 
-Do not mark ready to merge if any condition is unmet:
+Do not mark ready to merge while any condition is unmet:
 
-- [ ] Required CI checks passing on latest commit.
-- [ ] No unresolved review comments or threads.
-- [ ] Local review loop clean.
+- [ ] Required CI checks passing on the **latest commit** (not a stale run).
+- [ ] No unresolved review comments or conversation threads.
+- [ ] Local review loop (`codex review --uncommitted`) clean.
+- [ ] **Independent review completed.** Self-review + green CI is not sufficient. At least one independent reviewer must approve.
 - [ ] Manual testing documented on target runtime.
-- [ ] No extraneous diffs, debug logs, or leaked secrets.
-- [ ] Documentation in `.open-project-manager/` updated.
+- [ ] No extraneous diffs, debug logs, temporary files, or leaked secrets.
+- [ ] Documentation in `.open-project-manager/` synchronized with implementation.
+- [ ] Never fabricate commit hashes, test output, or review status.
 
 ---
 
-## 3. PR Evidence Standard
+## 3. Draft vs Ready-for-Review
+
+- Open PRs in **draft** during active development.
+- Convert to **ready-for-review** only after the local review loop passes and all hard gates are met.
+- If post-review changes require force-push or significant rework, return to draft.
+
+---
+
+## 4. Contributor Fork PRs
+
+When submitting from a fork:
+- Ensure the fork is up to date with the upstream target branch.
+- CI must run against the merge result, not the fork branch alone.
+- Include the upstream base branch in the PR description.
+
+---
+
+## 5. PR Evidence Standard
 
 Every pull request must document:
 
-1. **Problem & Scope:** Exact issue addressed.
-2. **Approach:** Architectural decisions.
-3. **Automated Verification:** Test/build commands and results.
-4. **Manual Verification:** Steps run and UI screenshots/recordings.
-5. **Limitations:** Known boundaries or residual risk.
+1. **Problem & Scope:** Issue addressed and boundaries of the change.
+2. **Approach:** Architecture decisions and non-obvious rationale.
+3. **Automated Verification:** Exact commands run and result summary.
+4. **Manual Verification:** Steps performed on target runtime, with screenshots for UI changes.
+5. **Known Limitations:** Residual risk, follow-up items, deferred work.
