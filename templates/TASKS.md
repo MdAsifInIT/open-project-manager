@@ -2,21 +2,20 @@
 
 ## Current Phase: Phase 1 (Foundation)
 
-- [ ] **Task 1: Project Initialization**
-  - **Scope:** Configure base build system, environment settings, and dependencies.
-  - **Acceptance Criteria:** Verified stable/LTS dependencies installed; clean build output.
-  - **Automated Validation:** Test harness passes (`npm test`, `pytest`, `cargo test`, etc.).
-  - **Manual Validation:** Verify setup steps on clean target runtime.
-  - **Dependencies / Blockers:** None.
+- [ ] **Task 1: Project Setup**
+  - **Scope:** Configure build system and verified LTS dependencies.
+  - **Acceptance Criteria:** Clean build and test passes.
+  - **Automated Validation:** Test command passes.
+  - **Manual Validation:** Verify setup on target runtime.
 
 ---
 
 ## Completed Tasks
 
-Move tasks to this section only after acceptance criteria and required validations pass. If validation was skipped for any item, document the explicit technical reason and residual risk.
+Move items here only after acceptance criteria and validation passes.
 
 ---
 
 ## Completion Rule
 
-A phase is complete only when all included deliverables meet their exit criteria and pass the local review gate (`codex review --uncommitted`).
+Phase is complete when all deliverables meet exit criteria and pass `codex review --uncommitted`.
