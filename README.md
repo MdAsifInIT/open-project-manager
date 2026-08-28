@@ -1,21 +1,8 @@
 # open-project-manager
 
-```text
-                 _ 
-               _[ ]_ 
-              [     ]
-               '[_]'
-               
-      _.-._    .-"-.    .---.
-     /     \  / \_/ \   |  / |
-    |   |   | |     |   | /  |
-     \_____/   '-.-'    '---'
-       _|_       |        
-             .---------.
-            |           |
-            |___________|
-            '---[___]---'
-```
+<p align="center">
+  <img src="./logo.jpg" alt="Open Project Manager Sketch" width="300" />
+</p>
 
 Minimal, markdown-driven project manager plugin for coding assistants.
 
