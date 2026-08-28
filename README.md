@@ -1,8 +1,6 @@
 # open-project-manager
 
-<p align="center">
-  <img src="./logo.jpg" alt="Open Project Manager Sketch" width="300" />
-</p>
+
 
 Minimal, markdown-driven project manager plugin for coding assistants.
 
