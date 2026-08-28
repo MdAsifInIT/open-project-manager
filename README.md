@@ -18,7 +18,12 @@ git clone https://github.com/MdAsifInIT/open-project-manager.git ~/.gemini/confi
 ```
 
 ### For Codex App
-This repository is a standalone Codex plugin. Clone it, then add the cloned directory as a local plugin source in Codex.
+Add the marketplace and install the plugin:
+
+```bash
+codex plugin marketplace add https://github.com/MdAsifInIT/open-project-manager.git
+codex plugin add open-project-manager@open-project-manager
+```
 
 ## Included Skills
 

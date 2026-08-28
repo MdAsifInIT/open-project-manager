@@ -1,0 +1,21 @@
+{
+  "name": "open-project-manager",
+  "interface": {
+    "displayName": "Open Project Manager"
+  },
+  "plugins": [
+    {
+      "name": "open-project-manager",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/MdAsifInIT/open-project-manager.git",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
