@@ -5,14 +5,15 @@ Protocol for reviewing changes and validating merge readiness.
 ## 1. Local Review Loop
 
 ```bash
-codex review --uncommitted
+codex review --base <base-branch>
 ```
 
-1. Evaluate each finding against the current diff.
-2. Fix actionable defects and add regression tests where appropriate.
-3. Re-run the local gate (lint, typecheck, build, test suite).
-4. Repeat `codex review --uncommitted` until no actionable findings remain.
-5. Document verified false positives without altering correct code.
+1. Require a Git repository and resolve the base branch from Git metadata; ask the user if ambiguous.
+2. Review committed branch changes with `codex review --base <base-branch>`.
+3. When the working tree is dirty, also run `codex review --uncommitted`.
+4. Evaluate each finding, fix actionable defects, and add regression tests where appropriate.
+5. Re-run the local gate and applicable reviews until no actionable findings remain.
+6. Document verified false positives without altering correct code.
 
 > **Blocker:** If Codex review fails or is unavailable, report it as an explicit readiness blocker. Do not silently substitute a third-party review CLI.
 
@@ -24,11 +25,12 @@ Do not mark ready to merge while any condition is unmet:
 
 - [ ] Required CI checks passing on the **latest commit** (not a stale run).
 - [ ] No unresolved review comments or conversation threads.
-- [ ] Local review loop (`codex review --uncommitted`) clean.
+- [ ] Committed branch review (`codex review --base <base-branch>`) clean.
+- [ ] Uncommitted review clean when the working tree is dirty.
 - [ ] **Independent review completed.** Self-review + green CI is not sufficient. At least one independent reviewer must approve.
 - [ ] Manual testing documented on target runtime.
 - [ ] No extraneous diffs, debug logs, temporary files, or leaked secrets.
-- [ ] Documentation in `.open-project-manager/` synchronized with implementation.
+- [ ] Documentation in `.opm/` synchronized with implementation.
 - [ ] Never fabricate commit hashes, test output, or review status.
 
 ---

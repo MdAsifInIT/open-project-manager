@@ -2,42 +2,39 @@
 
 ## Problem
 
-<!-- What problem does this project solve? Who has this problem and why does it matter? -->
+Not established yet.
 
 ## Target Users
 
-<!-- Primary users, secondary users, and their key constraints (device, network, accessibility, domain expertise). -->
+Not established yet.
 
 ## Required Behavior
 
-<!-- Observable, testable functional capabilities. Each item should be verifiable by running the app or inspecting output. -->
-
-- [ ] 
+- [ ] Define required behavior.
 
 ## Error, Loading, and Edge-Case States
 
-<!-- How should the system behave under failure, empty data, slow connections, and boundary inputs? -->
+Not established yet.
 
 ## Architecture & Data Flow
 
 ### Components
-<!-- High-level component breakdown with responsibilities. -->
+Not established yet.
 
 ### State & Storage
-<!-- Client state management, server-side persistence, schemas, caching strategy. -->
+Not established yet.
 
 ### External Integrations
-<!-- APIs, SDKs, webhooks, and third-party services. Include auth method and rate limits if known. -->
+None.
 
 ## Non-Goals
 
-<!-- Features, platforms, or user segments explicitly out of scope for this project. Prevents scope creep. -->
+None.
 
 ## Acceptance Criteria
 
-- [ ] <!-- Observable, testable outcome with pass/fail criteria -->
-- [ ] <!-- Include performance targets if applicable (e.g., "page loads in < 2s on 3G") -->
+- [ ] Define an observable pass/fail outcome.
 
 ## Unresolved Questions
 
-<!-- Open architectural decisions that need investigation before implementation. If this list is long, consider running a Wayfinder session. -->
+None.

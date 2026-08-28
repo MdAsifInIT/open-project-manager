@@ -5,18 +5,18 @@ Structure complex, undefined, or high-risk architectural decisions using three c
 ## Coordinated Files
 
 - **`SPEC.md`**: Target destination — goals, scope boundaries, testable requirements, constraints.
-- **`MAP.md`**: Active decision graph categorizing questions by readiness.
-- **`ANSWERS.md`**: Durable decision log with rationale, evidence, and revisit criteria.
+- **`.opm/MAP.md`**: Active decision graph categorizing questions by readiness.
+- **`.opm/ANSWERS.md`**: Durable decision log with rationale, evidence, and revisit criteria.
 
 ---
 
 ## Invocation Modes
 
 ### Chart
-Use when entering a new, undefined problem space. Create `MAP.md` with initial `Fog` entries for all known unknowns, then decompose into `Frontier` questions.
+Use when entering a new, undefined problem space. Create `.opm/MAP.md` with initial `Fog` entries for all known unknowns, then decompose into `Frontier` questions.
 
 ### Advance
-Pick the next unblocked `Frontier` question, investigate it (read code, run experiments, consult docs), and record the resolution in `ANSWERS.md`. Update `MAP.md` to reflect newly unblocked questions.
+Pick the next unblocked `Frontier` question, investigate it (read code, run experiments, consult docs), and record the resolution in `.opm/ANSWERS.md`. Update `.opm/MAP.md` to reflect newly unblocked questions.
 
 ### Refresh
 Use when unexpected findings or requirement changes invalidate earlier decisions. Re-evaluate `Completed` questions against new context, downgrade to `Frontier` if the decision no longer holds.
@@ -42,7 +42,7 @@ Use when unexpected findings or requirement changes invalidate earlier decisions
 
 ---
 
-## Question Entry Format (`MAP.md`)
+## Question Entry Format (`.opm/MAP.md`)
 
 ```markdown
 ### Q-001: Which storage engine for event history?
@@ -51,7 +51,7 @@ Use when unexpected findings or requirement changes invalidate earlier decisions
 - **Context:** Need sub-10ms reads for recent events, append-heavy writes.
 ```
 
-## Decision Record Format (`ANSWERS.md`)
+## Decision Record Format (`.opm/ANSWERS.md`)
 
 ```markdown
 ### Q-001: Which storage engine for event history?
@@ -68,6 +68,6 @@ Use when unexpected findings or requirement changes invalidate earlier decisions
 
 - [ ] Every `Fog` entry has been decomposed or explicitly deferred with rationale.
 - [ ] Every `Blocked` entry lists its blocking question ID.
-- [ ] Every `Completed` entry has a matching `ANSWERS.md` record.
+- [ ] Every `Completed` entry has a matching `.opm/ANSWERS.md` record.
 - [ ] `SPEC.md` is updated to reflect resolved decisions.
 - [ ] No implementation code was written during a Wayfinder session.
