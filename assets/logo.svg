@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Lucid linear gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="gear-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e4e4e7"/>
+    </linearGradient>
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas: Minimalist rounded card -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)"/>
+
+  <!-- Outer Technical Blueprint Ring (Lucid Dashes) -->
+  <circle cx="256" cy="256" r="204" fill="none" stroke="#27272a" stroke-width="1.5" stroke-dasharray="6 8"/>
+  <circle cx="256" cy="256" r="172" fill="none" stroke="#3f3f46" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Gear Group -->
+  <g id="gear-body" transform="translate(256, 256)">
+    <!-- 8 Rounded Teeth (Rotated symmetrically) -->
+    <g stroke="url(#gear-stroke)" stroke-width="32" stroke-linecap="round">
+      <line x1="0" y1="-146" x2="0" y2="-120" />
+      <line x1="0" y1="-146" x2="0" y2="-120" transform="rotate(45)" />
+      <line x1="0" y1="-146" x2="0" y2="-120" transform="rotate(90)" />
+      <line x1="0" y1="-146" x2="0" y2="-120" transform="rotate(135)" />
+      <line x1="0" y1="-146" x2="0" y2="-120" transform="rotate(180)" />
+      <line x1="0" y1="-146" x2="0" y2="-120" transform="rotate(225)" />
+      <line x1="0" y1="-146" x2="0" y2="-120" transform="rotate(270)" />
+      <line x1="0" y1="-146" x2="0" y2="-120" transform="rotate(315)" />
+    </g>
+
+    <!-- Main Gear Wheel Rim -->
+    <circle cx="0" cy="0" r="124" fill="#09090b" stroke="url(#gear-stroke)" stroke-width="24"/>
+
+    <!-- Lucid Chamfer Inner Ring -->
+    <circle cx="0" cy="0" r="92" fill="none" stroke="#27272a" stroke-width="2"/>
+
+    <!-- Central Aperture Core -->
+    <circle cx="0" cy="0" r="52" fill="#09090b" stroke="url(#gear-stroke)" stroke-width="16"/>
+
+    <!-- Center Precision Dot -->
+    <circle cx="0" cy="0" r="22" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="8" fill="#09090b"/>
+  </g>
+</svg>

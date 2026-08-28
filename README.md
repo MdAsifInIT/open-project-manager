@@ -1,8 +1,12 @@
-# open-project-manager
+<p align="center">
+  <img src="./assets/logo.svg" width="96" height="96" alt="open-project-manager logo" />
+</p>
 
-![open-project-manager logo](assets/logo.jpg)
+<h1 align="center">open-project-manager</h1>
 
-Minimal, markdown-driven project manager plugin for coding assistants.
+<p align="center">
+  <em>Minimal, markdown-driven project manager and engineering workflow plugin for AI coding assistants.</em>
+</p>
 
 ## Installation
 
