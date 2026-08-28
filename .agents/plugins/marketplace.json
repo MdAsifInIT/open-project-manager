@@ -1,0 +1,13 @@
+{
+  "name": "Open Project Manager Marketplace",
+  "owner": {
+    "name": "Open Source Community"
+  },
+  "plugins": [
+    {
+      "name": "open-project-manager",
+      "source": "../../",
+      "description": "Portable, markdown-driven AI project management and workflow plugin."
+    }
+  ]
+}
