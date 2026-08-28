@@ -1,6 +1,6 @@
 {
   "name": "open-project-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Portable, markdown-driven AI project management and workflow plugin.",
   "author": {
     "name": "MdAsifInIT",
@@ -18,7 +18,7 @@
     "displayName": "Open Project Manager",
     "shortDescription": "Manage AI-assisted projects with Markdown workflows.",
     "longDescription": "Initialize, plan, execute, and review AI-assisted development projects with portable Markdown workflows.",
-    "developerName": "MdAsif",
+    "developerName": "MdAsifInIT",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
