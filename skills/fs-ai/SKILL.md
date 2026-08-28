@@ -1,9 +1,9 @@
 ---
-name: python-ai
-description: Build and troubleshoot AI applications using Python (FastAPI, OpenAI SDK) and TypeScript (Next.js, React).
+name: fs-ai
+description: Build and troubleshoot full stack AI applications using Python (FastAPI, OpenAI SDK) and TypeScript (Next.js, React).
 ---
 
-# python-ai
+# fs-ai
 
 ## Stack Defaults
 

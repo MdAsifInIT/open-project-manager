@@ -12,8 +12,3 @@ Require explicit user confirmation for each invocation:
 | `git clean -fd` | Permanently deletes untracked files |
 | `git push --force` | Overwrites remote repository history |
 | `gh repo delete` | Permanent repository destruction |
-
-## Safe Read-Only Commands
-
-- **System:** Standard read commands (`ls`, `cat`, `grep`, `rg`, `fd`, `jq`, etc.)
-- **Git / GitHub CLI:** `git status`, `git diff`, `git log`, `gh pr view`, `gh run list`

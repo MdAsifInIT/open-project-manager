@@ -1,55 +1,24 @@
 # open-project-manager
 
-Portable, markdown-driven project manager and workflow plugin for coding assistants.
-
-## Included Skills
-
-- **`open-project-manager`**: Project lifecycle manager (`init`, `plan`, `execute`, `review`). Sets up and manages `.open-project-manager/` in repositories.
-- **`python-ai`**: AI backend (Python, FastAPI, OpenAI SDK) and frontend (TypeScript, Next.js, React).
-- **`emil-design-eng`**: UI polish, interaction physics, and component mechanics.
-- **`design-taste-frontend`**: Anti-slop frontend engineering for landing pages and interfaces.
-
----
+Minimal, markdown-driven project manager plugin for coding assistants.
 
 ## Installation
 
-To install this plugin and its bundled skills, you have two options:
-
-### Option 1: Register via plugins.json (Recommended for local dev)
-Add the repository path to your global plugins configuration in `~/.gemini/config/plugins.json`:
-
-```json
-{
-  "entries": [
-    { "path": "C:/Users/MdAsif/Documents/Code/open-project-manager" }
-  ]
-}
-```
-
-### Option 2: Install directly to the plugins directory
-Clone or copy this repository directly into your Antigravity global plugins directory:
+Clone this repository directly into your plugins directory:
 
 ```bash
 git clone https://github.com/MdAsifInIT/open-project-manager.git ~/.gemini/config/plugins/open-project-manager
 ```
 
-*(Note: Installing the plugin automatically registers all included skills.)*
----
+## Included Skills
 
-## Usage
+- **`$open-project-manager`**: Project lifecycle manager (`init`, `plan`, `execute`, `review`).
+- **`$fs-ai`**: Build and troubleshoot full-stack AI apps (Next.js + FastAPI).
+- **`$emil-design-eng`**: UI polish, interaction physics, and component mechanics.
+- **`$design-taste-frontend`**: Anti-slop frontend engineering for distinctive interfaces.
 
-- `$open-project-manager init` — Bootstrap `.open-project-manager/` in current project.
-- `$open-project-manager plan` — Formulate phased plan with verified LTS dependencies.
-- `$open-project-manager execute` — Implement approved phase with minimal edits.
-- `$open-project-manager review` — Run uncommitted review loop and verify PR readiness.
-- `$python-ai` — Build/troubleshoot FastAPI + OpenAI SDK + Next.js stack.
-- `$emil-design-eng` — Polish UI interactions, transitions, and component feedback.
-- `$design-taste-frontend` — Build distinctive landing pages and interfaces.
+## Credits
 
-## Credits & Acknowledgements
-
-This project was built upon the amazing work and ideas of the following creators:
-
-- **Idea & General Inspiration**: Inspired by **[titus-ai](https://github.com/christitustech/titus-ai)** by Chris Titus (@christitius).
-- **`emil-design-eng` Skill**: Distilled from the design engineering philosophies and animation guidelines of **[Emil Kowalski](https://github.com/emilkowalski)**.
-- **`design-taste-frontend` Skill**: Distilled from the **[taste-skill](https://github.com/Leonxlnx/taste-skill)** repository by **Leonxlnx**, focusing on anti-slop frontend engineering directives for AI.
+- **Idea & Inspiration**: **[titus-ai](https://github.com/christitustech/titus-ai)** by Chris Titus.
+- **`emil-design-eng`**: Distilled from the design engineering work of **[Emil Kowalski](https://github.com/emilkowalski)**.
+- **`design-taste-frontend`**: Distilled from the **[taste-skill](https://github.com/Leonxlnx/taste-skill)** framework by **Leonxlnx**.
