@@ -13,27 +13,27 @@ Portable, markdown-driven project manager and workflow plugin for coding assista
 
 ## Installation
 
-### Antigravity / Gemini Plugin
-Symlink into plugins directory:
-```powershell
-New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gemini\config\plugins\open-project-manager" -Target "C:\Users\MdAsif\Documents\Code\open-project-manager"
-```
-Or register in `~/.gemini/config/plugins.json`:
+To install this plugin and its bundled skills, you have two options:
+
+### Option 1: Register via plugins.json (Recommended for local dev)
+Add the repository path to your global plugins configuration in `~/.gemini/config/plugins.json`:
+
 ```json
 {
-  "entries": [{ "path": "C:/Users/MdAsif/Documents/Code/open-project-manager" }]
+  "entries": [
+    { "path": "C:/Users/MdAsif/Documents/Code/open-project-manager" }
+  ]
 }
 ```
 
-### Codex Skills
-Symlink individual skills into `~/.agents/skills/`:
+### Option 2: Install directly to the plugins directory
+Clone or copy this repository directly into your Antigravity global plugins directory:
+
 ```powershell
-New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.agents\skills\open-project-manager" -Target "C:\Users\MdAsif\Documents\Code\open-project-manager\skills\open-project-manager"
-New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.agents\skills\python-ai" -Target "C:\Users\MdAsif\Documents\Code\open-project-manager\skills\python-ai"
-New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.agents\skills\emil-design-eng" -Target "C:\Users\MdAsif\Documents\Code\open-project-manager\skills\emil-design-eng"
-New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.agents\skills\design-taste-frontend" -Target "C:\Users\MdAsif\Documents\Code\open-project-manager\skills\design-taste-frontend"
+git clone https://github.com/MdAsifInIT/open-project-manager.git "$env:USERPROFILE\.gemini\config\plugins\open-project-manager"
 ```
 
+*(Note: Installing the plugin automatically registers all included skills.)*
 ---
 
 ## Usage
