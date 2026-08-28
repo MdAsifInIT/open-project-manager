@@ -29,8 +29,8 @@ Add the repository path to your global plugins configuration in `~/.gemini/confi
 ### Option 2: Install directly to the plugins directory
 Clone or copy this repository directly into your Antigravity global plugins directory:
 
-```powershell
-git clone https://github.com/MdAsifInIT/open-project-manager.git "$env:USERPROFILE\.gemini\config\plugins\open-project-manager"
+```bash
+git clone https://github.com/MdAsifInIT/open-project-manager.git ~/.gemini/config/plugins/open-project-manager
 ```
 
 *(Note: Installing the plugin automatically registers all included skills.)*
@@ -45,3 +45,11 @@ git clone https://github.com/MdAsifInIT/open-project-manager.git "$env:USERPROFI
 - `$python-ai` — Build/troubleshoot FastAPI + OpenAI SDK + Next.js stack.
 - `$emil-design-eng` — Polish UI interactions, transitions, and component feedback.
 - `$design-taste-frontend` — Build distinctive landing pages and interfaces.
+
+## Credits & Acknowledgements
+
+This project was built upon the amazing work and ideas of the following creators:
+
+- **Idea & General Inspiration**: Inspired by **[titus-ai](https://github.com/christitustech/titus-ai)** by Chris Titus (@christitius).
+- **`emil-design-eng` Skill**: Distilled from the design engineering philosophies and animation guidelines of **[Emil Kowalski](https://github.com/emilkowalski)**.
+- **`design-taste-frontend` Skill**: Distilled from the **[taste-skill](https://github.com/Leonxlnx/taste-skill)** repository by **Leonxlnx**, focusing on anti-slop frontend engineering directives for AI.

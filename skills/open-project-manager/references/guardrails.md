@@ -15,6 +15,5 @@ Require explicit user confirmation for each invocation:
 
 ## Safe Read-Only Commands
 
-- **PowerShell:** `Get-ChildItem`, `Get-Content`, `Select-String`, `Test-Path`, `rg`, `fd`, `jq`
-- **POSIX:** `ls`, `cat`, `head`, `tail`, `grep`, `find`, `which`, `stat`, `rg`, `fd`, `jq`
+- **System:** Standard read commands (`ls`, `cat`, `grep`, `rg`, `fd`, `jq`, etc.)
 - **Git / GitHub CLI:** `git status`, `git diff`, `git log`, `gh pr view`, `gh run list`

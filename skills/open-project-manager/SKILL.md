@@ -27,14 +27,11 @@ Markdown-driven project lifecycle manager enforcing quality standards and verifi
    git branch --show-current
    ```
 2. **Detect environment:**
-   - Detect `rtk` on `PATH` (`rtk --version`).
-   - Detect OS (Windows PowerShell vs WSL/Linux/macOS).
    - Detect project toolchains and package managers.
 3. **Gather project requirements:** Solicit core goals, constraints, and architecture.
 4. **Stamp templates into `.open-project-manager/`:**
    - Read from `templates/` (`AGENTS.md`, `SPEC.md`, `ROADMAP.md`, `TASKS.md`).
    - Fill in project details; eliminate placeholder text.
-   - Include RTK guidance in `AGENTS.md` **only if `rtk` is installed**.
    - Embed quality pillars (LTS dependencies, minimal edits, UI integrity).
 5. **Write files:**
    - `.open-project-manager/AGENTS.md`
@@ -83,5 +80,4 @@ Markdown-driven project lifecycle manager enforcing quality standards and verifi
 - [PR Readiness & Gates](./references/pr-readiness.md)
 - [Wayfinder (Ambiguity)](./references/wayfinder.md)
 - [Security Baseline](./references/security-baseline.md)
-- [RTK Guide](./references/rtk-guide.md)
 - [Guardrails](./references/guardrails.md)

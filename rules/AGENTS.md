@@ -38,9 +38,7 @@
 
 - Run code, tests, linters, and type checks rather than guessing results.
 - Read complete error traces before attempting fixes.
-- Use `rtk` only when installed and output is large/repetitive. Use raw commands for short outputs or debugging.
 - Never execute destructive commands (`git reset --hard`, `git clean -fd`, `git push --force`, deleting repositories) without explicit confirmation.
-- Platform: Use PowerShell on native Windows (`\`, `.exe`); use bash/POSIX (`/`) in WSL, Linux, or macOS.
 
 ## Task Interpretation
 
