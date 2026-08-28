@@ -1,10 +1,28 @@
 {
   "name": "open-project-manager",
-  "description": "Portable, markdown-driven AI project management and workflow plugin.",
   "version": "1.0.0",
-  "icon": "./assets/icon.svg",
+  "description": "Portable, markdown-driven AI project management and workflow plugin.",
+  "author": {
+    "name": "MdAsif",
+    "url": "https://github.com/MdAsifInIT"
+  },
+  "repository": "https://github.com/MdAsifInIT/open-project-manager",
+  "license": "MIT",
+  "keywords": ["project-management", "workflow", "markdown"],
+  "skills": "./skills/",
   "interface": {
+    "displayName": "Open Project Manager",
+    "shortDescription": "Manage AI-assisted projects with Markdown workflows.",
+    "longDescription": "Initialize, plan, execute, and review AI-assisted development projects with portable Markdown workflows.",
+    "developerName": "MdAsif",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Initialize project management for this repository.",
+      "Create a phased implementation plan for this project.",
+      "Review this project's current implementation status."
+    ],
     "composerIcon": "./assets/icon.svg",
-    "logo": "./assets/logo.svg"
+    "logo": "./assets/icon.svg"
   }
 }

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/logo.svg" width="96" height="96" alt="open-project-manager logo" />
+  <img src="./assets/icon.svg" width="96" height="96" alt="open-project-manager logo" />
 </p>
 
 <h1 align="center">open-project-manager</h1>
@@ -18,16 +18,7 @@ git clone https://github.com/MdAsifInIT/open-project-manager.git ~/.gemini/confi
 ```
 
 ### For Codex App
-This repository acts as a plugin marketplace. You can add it directly to your Codex environment.
-
-1. Add the marketplace:
-```bash
-codex plugin marketplace add https://github.com/MdAsifInIT/open-project-manager.git
-```
-2. Install the plugin:
-```bash
-codex plugin install open-project-manager
-```
+This repository is a standalone Codex plugin. Clone it, then add the cloned directory as a local plugin source in Codex.
 
 ## Included Skills
 
