@@ -1,4 +1,4 @@
-# Development Lifecycle
+# OPM Development Lifecycle
 
 17-step lifecycle for AI-assisted engineering.
 
@@ -15,15 +15,15 @@
 
 ## 17 Steps
 
-1. **Init:** Run `$open-project-manager init` to create root `AGENTS.md` and `.opm/`.
+1. **Init:** Run `$opm init` to create root `AGENTS.md` and `.opm/`.
 2. **Inspect:** Examine existing code, architecture, and tooling.
 3. **Rules:** Establish repository boundaries and verified commands in `AGENTS.md`.
 4. **Specify:** Define testable requirements and non-goals in `SPEC.md`.
 5. **Roadmap:** Sequence deliverables and exit criteria in `ROADMAP.md`.
 6. **Task Breakdown:** Define tasks with validation checks in `TASKS.md`.
-7. **Draft Plan:** Formulate implementation plan via `$open-project-manager plan`.
+7. **Draft Plan:** Formulate implementation plan via `$opm plan`.
 8. **Approve:** Await user approval.
-9. **Implement:** Execute phase via `$open-project-manager execute` with minimal edits.
+9. **Implement:** Execute phase via `$opm execute` with minimal edits.
 10. **Focused Validation:** Run targeted checks during iteration.
 11. **Local Gate:** Run full lint, typecheck, build, and test suite.
 12. **Update Status:** Record verified task completions in `TASKS.md`.

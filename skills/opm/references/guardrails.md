@@ -1,4 +1,4 @@
-# Command Guardrails
+# OPM Command Guardrails
 
 Execution boundaries to prevent repository damage and data loss.
 

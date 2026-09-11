@@ -1,18 +1,18 @@
 ---
-name: open-project-manager
+name: opm
 description: >-
   Initialize, plan, execute, and validate AI-assisted development projects.
   Bootstrap planning documents in .opm/, manage phased implementation,
-  and validate pull requests. Invoke with $open-project-manager.
+  and validate pull requests. Invoke with $opm.
 ---
 
-# open-project-manager
+# opm
 
-Markdown-driven project lifecycle manager enforcing quality standards and verified execution.
+OPM is a markdown-driven project lifecycle manager enforcing quality standards and verified execution.
 
 ## Initialization Contract
 
-`plan` and `execute` require `AGENTS.md`, `.opm/SPEC.md`, `.opm/ROADMAP.md`, and `.opm/TASKS.md`. If any are missing, stop and direct the user to run `$open-project-manager init`; do not initialize implicitly.
+`plan` and `execute` require `AGENTS.md`, `.opm/SPEC.md`, `.opm/ROADMAP.md`, and `.opm/TASKS.md`. If any are missing, stop and direct the user to run `$opm init`; do not initialize implicitly.
 
 ## Action Modes
 

@@ -1,4 +1,4 @@
-# Wayfinder Ambiguity Framework
+# OPM Wayfinder Ambiguity Framework
 
 Structure complex, undefined, or high-risk architectural decisions using three coordinated files.
 

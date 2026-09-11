@@ -1,4 +1,4 @@
-# Security Baseline & Governance
+# OPM Security Baseline & Governance
 
 Automated repository scanning and security controls.
 

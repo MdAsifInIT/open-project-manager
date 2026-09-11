@@ -1,4 +1,4 @@
-# PR Readiness & Merge Gates
+# OPM PR Readiness & Merge Gates
 
 Protocol for reviewing changes and validating merge readiness.
 
