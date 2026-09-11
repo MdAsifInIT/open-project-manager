@@ -41,7 +41,10 @@ OPM is a markdown-driven project lifecycle manager enforcing quality standards a
    - Fill in project details; remove instructional comments, ellipses, blank fields, and prompt placeholders.
    - Write `Not established yet` for required unknowns and `None` for unavailable optional values.
    - Embed quality pillars (LTS dependencies, minimal edits, UI integrity).
-   - In root `AGENTS.md`, create or replace one `## Open Project Manager` section while preserving all other content.
+   - Wrap the generated `## Open Project Manager` section with exact `<!-- OPM:START -->` and `<!-- OPM:END -->` markers.
+   - If root `AGENTS.md` is absent, create it from the marked template. If neither marker exists, append the marked block.
+   - If exactly one correctly ordered marker pair exists, replace only the content from the start marker through the end marker line, including its line ending when present, and preserve all content outside it exactly.
+   - If marker counts are anything other than zero each or one correctly ordered pair, stop without modifying `AGENTS.md` and report the malformed markers.
    - Create missing `.opm` documents only. Preserve existing documents unless the user explicitly requests regeneration.
 5. **Write files:**
    - `AGENTS.md` (repository root)

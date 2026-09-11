@@ -1,3 +1,4 @@
+<!-- OPM:START -->
 ## Open Project Manager
 
 ### Purpose
@@ -36,3 +37,4 @@ Not established yet.
 - **Requirements & Boundaries:** Read [`.opm/SPEC.md`](./.opm/SPEC.md)
 - **Phase Roadmap:** Read [`.opm/ROADMAP.md`](./.opm/ROADMAP.md)
 - **Active Tasks:** Read [`.opm/TASKS.md`](./.opm/TASKS.md)
+<!-- OPM:END -->
