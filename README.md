@@ -10,7 +10,7 @@
 
 ## Installation
 
-### For Antigravity
+### For Antigravity & Antigravity 2.0
 Clone this repository directly into your plugins directory:
 
 ```bash
